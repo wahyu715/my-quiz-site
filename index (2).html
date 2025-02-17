@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>情報Ⅰ - WWWとURL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .question {
+            background-color: #e3f2fd;
+            padding: 5px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .answers {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #dff0d8;
+            border-radius: 8px;
+            display: none;
+        }
+        .show-button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function toggleAnswers() {
+            var answers = document.getElementById("answers");
+            if (answers.style.display === "none") {
+                answers.style.display = "block";
+            } else {
+                answers.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>情報Ⅰ - WWWとURL</h1>
+        <p><span class="highlight">ア</span> <span class="question">__________</span> は、インターネットで不特定多数の人に情報を発信する通信サービスである。</p>
+        <p>WWWでは <span class="highlight">イ</span> <span class="question">__________</span> というプロトコルが使われ、</p>
+        <p><span class="highlight">ウ</span> <span class="question">__________</span> と呼ばれる単位で情報が発信される。</p>
+        <p>ウェブページは <span class="highlight">エ</span> <span class="question">__________</span> という言語で書かれ、文章、音声、画像、動画などの情報を統合することができる。</p>
+        <p>また、 <span class="highlight">オ</span> <span class="question">__________</span> （リンク）という機能で、さまざまな関連付きができ、簡単に移動できる。</p>
+        <p>Webページを見るためのソフトウェアを <span class="highlight">カ</span> <span class="question">__________</span> （ブラウザ）という。</p>
+        <p>インターネット上のWebページの住所を示すものを <span class="highlight">キ</span> <span class="question">__________</span> という。</p>
+        <p>コンピュータネットワークを使って、手紙のようなメッセージを送受信するシステムを <span class="highlight">ク</span> <span class="question">__________</span> という。</p>
+        <p>それを送受信するソフトウェアを <span class="highlight">ケ</span> <span class="question">__________</span> という。</p>
+        <p>電子メールの宛先を <span class="highlight">コ</span> <span class="question">__________</span> という。</p>
+        <p>電子メールの受け渡しを行うサーバーを <span class="highlight">サ</span> <span class="question">__________</span> という。</p>
+        <p>電子メールを送信するときは <span class="highlight">シ</span> <span class="question">__________</span> 、受信するときは <span class="highlight">ス</span> <span class="question">__________</span> や <span class="highlight">セ</span> <span class="question">__________</span> というプロトコルが使われる。</p>
+        
+        <button class="show-button" onclick="toggleAnswers()">答えを見る</button>
+        
+        <div class="answers" id="answers">
+            <h2>答え</h2>
+            <p><strong>ア:</strong> WWW</p>
+            <p><strong>イ:</strong> HTTP</p>
+            <p><strong>ウ:</strong> ウェブページ</p>
+            <p><strong>エ:</strong> HTML</p>
+            <p><strong>オ:</strong> ハイパーリンク</p>
+            <p><strong>カ:</strong> ウェブブラウザ</p>
+            <p><strong>キ:</strong> URL</p>
+            <p><strong>ク:</strong> 電子メール</p>
+            <p><strong>ケ:</strong> メーラー</p>
+            <p><strong>コ:</strong> メールアドレス</p>
+            <p><strong>サ:</strong> メールサーバー</p>
+            <p><strong>シ:</strong> SMTP</p>
+            <p><strong>ス:</strong> POP</p>
+            <p><strong>セ:</strong> IMAP</p>
+        </div>
+    </div>
+</body>
+</html>
